@@ -1,4 +1,12 @@
 /*========LESSON HEADER=========*/
+.lesson-wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	.lesson-footer{
+		margin-top: auto;
+	}
+}
 .m-auto{
 	margin-right: auto;
 	margin-left: auto;
@@ -11,13 +19,13 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-.lesson-head> *{
+.lesson-header> *{
 	box-sizing: border-box;
 }
-.lesson-head{
+.lesson-header{
 	border-bottom: 1px solid #B9D2FF;
 	padding-top: 17px;
-	padding-bottom: 15px;
+	padding-bottom: 17px;
 	@media screen and (max-width: 767px){
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -31,7 +39,7 @@
 	&__top{
 		display: flex;
 		align-items: center;
-		margin-bottom: 13px;
+		margin-bottom: 28px;
 		max-width:780px;
 		padding-left: 15px;
 		padding-right: 15px;
@@ -66,7 +74,7 @@
 			justify-content: space-between;
 			width: 100%;
 			white-space: nowrap;
-			padding-right: 20px;
+			@media screen and (max-width: 767px){padding-right: 20px;}
 			li{
 				position: relative;
 				padding-left: 20px;
@@ -98,18 +106,18 @@
 						line-height: 15px;
 					}
 				}
-				&.lesson-head__menu-active a{
+				&.lesson-header__menu-active a{
 					color: $menuItemActive;
 					font-weight: 700;
 					@media screen and (max-width: 767px){
 						font-weight: 500;
 					}
 				}
-				&.lesson-head__menu-disable a{
+				&.lesson-header__menu-disable a{
 					color: $menuItemDisable;
 				}
-				&.lesson-head__menu-active:before,
-				&.lesson-head__menu-disable:before{
+				&.lesson-header__menu-active:before,
+				&.lesson-header__menu-disable:before{
 					display: none;
 				}
 				@media screen and (max-width: 767px){

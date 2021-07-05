@@ -1,0 +1,14 @@
+mixin btnItem(ic, text)
+	button.button-item
+		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
+		span #{text}
+.exercise-menu
+	.exercise-menu__hint-btn
+		+btnItem('bell', 'Подсказка')
+	.exercise-menu__nav
+		+btnItem('info', 'Задание')
+		+btnItem('dict', 'Словарь')
+		+btnItem('board', 'Грамматика')
+	.exercise-menu__toggle
+		.switch-button
+			

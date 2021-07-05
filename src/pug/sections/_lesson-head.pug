@@ -10,15 +10,15 @@ mixin lesson-menu(items)
 			
 
 
-.lesson-head
-	.lesson-head__content
-		.lesson-head__top.m-auto
-			button.lesson-head__icon-back
+.lesson-header
+	.lesson-header__content
+		.lesson-header__top.m-auto
+			button.lesson-header__icon-back
 				img(src="./images/lesson/icons/arrow-left.png", width="25" alt="alt")
-			.lesson-head__text
+			.lesson-header__text
 				p Он есть? (Он является?)
 	//====== МЕНЮ ======
 	.container-750
-		.lesson-head__menu
-			+lesson-menu([{title: 'Видео'}, {title: 'Аудирование'},{title: 'Словарь'},{title: 'Перевод', addClass:'lesson-head__menu-active'},{title: 'Диктант', addClass:'lesson-head__menu-disable'}])
+		.lesson-header__menu
+			+lesson-menu([{title: 'Видео'}, {title: 'Аудирование'},{title: 'Словарь'},{title: 'Перевод', addClass:'lesson-header__menu-active'},{title: 'Диктант', addClass:'lesson-header__menu-disable'}])
 	//====== //МЕНЮ ======

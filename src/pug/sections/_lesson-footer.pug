@@ -1,0 +1,9 @@
+mixin btnItem(ic, text)
+	button.button-item
+		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
+		span #{text}
+.lesson-footer
+	.container-750
+		.lesson-footer__content
+			+btnItem('comments', 'Комментарии (60)')
+			button.button Продолжить
