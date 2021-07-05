@@ -1,0 +1,593 @@
+// <1024px
+@media screen and (max-width: 1024px) {
+  //FEATURES
+  .features {
+    .info-features {
+      &__list {
+        justify-content: center;
+      }
+    }
+  }
+  //RESULT
+  .result {
+    &__list {
+      justify-content: center;
+    }
+  }
+}
+// 768px-900px
+@media screen and (max-width: 900px) {
+  ._container {
+    max-width: 900px;
+    padding: 0 10px;
+  }
+  //HEADER
+  .header {
+    .left-start {
+      &__title {
+        font-size: 25px;
+        line-height: 36px;
+      }
+      &__text {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 30px;
+      }
+      .total {
+        &__count {
+          font-size: 27px;
+          line-height: 33px;
+        }
+        &__text {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+    }
+    .right-start {
+      flex: 0 0 320px;
+      .social {
+        &__list {
+          width: 170px;
+        }
+      }
+    }
+    .popup {
+      .socials-popup {
+        &__list {
+          width: 170px;
+          max-width: none;
+        }
+        &__text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  //FEATURES
+  .features {
+    &__body {
+      flex-direction: column;
+      align-items: center;
+    }
+    .info-features {
+      &__watch {
+        position: absolute;
+        left: calc(50% - 72px);
+        margin-top: 20px;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &__video {
+      margin-top: 20px;
+    }
+  }
+  //WHAT
+  .what {
+    &__text {
+      font-size: 17px;
+      line-height: 21px;
+    }
+  }
+  //PROCESS
+  .process {
+    .tabs-process {
+      &__content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        .left-tabs {
+          max-width: none;
+          &__body {
+            margin-top: 20px;
+          }
+          &__top {
+            text-align: center;
+          }
+          &__about {
+            max-width: none;
+          }
+          &__count {
+            max-width: none;
+          }
+        }
+        .right-tabs {
+          margin-top: 20px;
+        }
+      }
+      &__text {
+        font-size: 17px;
+        line-height: 20px;
+      }
+      &__dottedwrapper {
+        max-width: calc(100% - 95px);
+      }
+    }
+  }
+  //RESULT
+  .result {
+    &__list {
+      justify-content: center;
+      column-gap: 30px;
+    }
+  }
+  //ONLINE
+  .online {
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+    &__subtitle {
+      font-size: 19px;
+      line-height: 23px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  //COURSE
+  .course {
+    &__item {
+      pointer-events: none;
+    }
+  }
+  //FEEDBACK
+  .feedback {
+    &__body {
+      max-width: 600px;
+    }
+    .list-feedback {
+      &__item {
+        max-width: 307px;
+      }
+      &__next {
+        right: -55px;
+      }
+      .slick-arrow {
+        width: 33px;
+        height: 33px;
+      }
+      &__prev {
+        background: url("../../images/feedback/prev_mobile.png");
+      }
+      &__next {
+        background: url("../../images/feedback/next_mobile.png");
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  //HEADER
+  .header {
+    &__start {
+      margin-top: 30px;
+    }
+    .nav-header {
+      display: none;
+    }
+    .top__wrapper {
+      padding: 0 15px;
+      .right-header {
+        justify-content: flex-end;
+        .header-language {
+          display: none;
+        }
+        &__registration {
+          display: none;
+        }
+        &__login {
+          .login {
+            &__text {
+              font-weight: bold;
+              font-size: 15px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .menu-wrapper {
+    display: block;
+  }
+  //COURSE
+  .course {
+    &__item {
+      pointer-events: auto;
+    }
+    &__item:hover {
+      .course__link {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 900px) {
+  //FEATURES
+  .features {
+    .info-features {
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__list {
+        grid-template-columns: 1fr 1fr;
+      }
+      &__about {
+        text-align: center;
+      }
+      &__watch {
+        bottom: -35px;
+      }
+    }
+  }
+}
+// 0-767px
+@media screen and (max-width: 767px) {
+  //HEADER
+  .header {
+    background-position-y: top;
+    background-repeat: no-repeat;
+    &__inner {
+      min-height: 0;
+    }
+    &__start {
+      flex-direction: column;
+      align-items: center;
+    }
+    .left-start {
+      max-width: none;
+      text-align: center;
+      &__text {
+        margin-top: 14px;
+      }
+      .total {
+        max-width: none;
+        justify-content: space-evenly;
+        margin-top: 38px;
+      }
+    }
+    .right-start {
+      margin-top: 56px;
+      max-width: 335px;
+      flex: 0 1 auto;
+      height: auto;
+      &__social {
+        flex-direction: column;
+      }
+      .social {
+        &__list {
+          margin-top: 15px;
+        }
+        &__title{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  //FEATURES
+  .features {
+    &__inner {
+      padding: 0 15px;
+    }
+    &__title {
+      font-size: 26px;
+      color: $blue--00;
+    }
+    .info-features {
+      &__list {
+        position: relative;
+      }
+      &__item {
+        display: flex;
+        align-items: flex-start;
+      }
+      &__image {
+        margin-top: 10px;
+      }
+      &__about {
+        margin-left: 14px;
+      }
+      &__watch {
+        bottom: -45px;
+      }
+    }
+  }
+  //PROCESS
+  .process {
+    padding: 0;
+    .tabs-process {
+      &__item {
+        .tabs-process__text {
+          display: none;
+        }
+      }
+      &__item.active {
+        .tabs-process__text {
+          display: block;
+          position: absolute;
+          left: calc(50% - 50px);
+          top: 55px;
+        }
+      }
+      &__dottedwrapper {
+        max-width: none;
+        margin: 0;
+      }
+      &__item:nth-child(4).active {
+        .tabs-process__text {
+          left: calc(50% - 80px);
+        }
+      }
+      &__item:nth-child(5).active {
+        .tabs-process__text {
+          left: calc(50% - 90px);
+        }
+      }
+      &__text {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+      }
+      .left-tabs {
+        &__top {
+          margin-top: 40px;
+          text-align: start;
+        }
+        &__title {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &__subtitle {
+          text-align: center;
+        }
+      }
+      .right-tabs {
+        width: 100%;
+        &__image {
+          min-width: 0;
+        }
+      }
+    }
+  }
+  //RESULT
+  .result {
+    &__list {
+      row-gap: 25px;
+    }
+    &__item {
+      padding: 0;
+    }
+  }
+  //ONLINE
+  .online {
+    &__inner {
+      flex-direction: column;
+    }
+    &__left {
+      justify-content: center;
+    }
+    &__right {
+      margin-left: 0;
+    }
+  }
+  //COURSE
+  .course {
+    &__item {
+      height: auto;
+    }
+    &__wrap {
+      height: auto;
+      padding: 10px;
+    }
+    &__top {
+      display: flex;
+      align-items: center;
+    }
+    &__list {
+      grid-template-columns: none;
+    }
+    &__image {
+      margin: 0;
+      width: 50px;
+    }
+    &__subtitle {
+      justify-content: flex-start;
+      height: auto;
+    }
+    &__text {
+      text-align: start;
+    }
+    &__content {
+      margin-left: 10px;
+    }
+  }
+  //QUESTIONS
+  .questions {
+    .list-questions {
+      &__item {
+        padding: 13px 12px;
+      }
+      &__item.active {
+        padding-left: 20px;
+      }
+    }
+  }
+  //FEEDBACK
+  .feedback {
+    .list-feedback {
+      &__item {
+        box-shadow: none;
+        max-width: none;
+        padding: 15px 38px 28px 39px;
+      }
+      &__prev {
+        left: 0;
+      }
+      &__next {
+        right: 0;
+      }
+    }
+    .slick-track {
+      column-gap: 0;
+    }
+  }
+  //WHAT
+  .what {
+    &__wrapper {
+      width: calc(100% - 20px);
+      &::before {
+        left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .features {
+    &__video {
+      iframe {
+        width: 400px;
+      }
+    }
+    .info-features {
+      &__list {
+        grid-template-columns: none;
+      }
+      &__text {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  //QUESTIONS
+  .questions {
+    .list-questions {
+      &__status {
+        width: 30px;
+        background-position-x: right;
+      }
+      &__title {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  //HEADER
+  .header {
+    order: 1;
+    .left-start {
+      .total {
+        padding-right: 0;
+        &__count {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        &__hours {
+          font-size: 15px;
+        }
+        &__text {
+          font-size: 11px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+  //FEATURES
+  .features {
+    order: 1;
+  }
+  //WHAT
+  .what {
+    order: 2;
+    &__title {
+      font-size: 25px;
+    }
+    &__wrapper::before {
+      top: 36px;
+    }
+    &__tagline {
+      font-size: 17px;
+      line-height: 21px;
+    }
+  }
+  //PROCESS
+  .process {
+    order: 4;
+    .tabs-process {
+      .left-tabs {
+        &__list {
+          grid-template-columns: repeat(auto-fill, 123px);
+        }
+        &__text {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  //RESULT
+  .result {
+    order: 3;
+    &__title {
+      font-size: 25px;
+    }
+  }
+  //ONLINE
+  .online {
+    order: 5;
+    &__right {
+      margin-left: 0;
+    }
+    &__title {
+      text-align: center;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  //COURSE
+  .course {
+    order: 6;
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  //QUESTIONS
+  .questions {
+    order: 7;
+  }
+  //FEEDBACK
+  .feedback {
+    order: 8;
+  }
+}

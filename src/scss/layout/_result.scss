@@ -1,0 +1,76 @@
+.result {
+  padding-bottom: 26px;
+  &__heading {
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $blue--00;
+  }
+  &__body {
+    margin-top: 38px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 350px));
+    justify-content: center;
+  }
+  &__item {
+    padding: 10px 0 0 44px;
+  }
+  &__top {
+    @include dfsb;
+    border-bottom: 1px solid $blue--80;
+    height: 49px;
+  }
+  &__month {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray--20;
+  }
+  &__image {
+    margin-bottom: 10px;
+  }
+  &__bottom {
+    margin-top: 12px;
+  }
+  &__words {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: $blue--00;
+  }
+  &__point {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 11px;
+  }
+  &__mark {
+    margin-top: 2px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray--00;
+    margin-left: 11px;
+  }
+  &__button {
+    max-width: 310px;
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: $white;
+    background-color: $orange;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 34px;
+    cursor: pointer;
+  }
+}

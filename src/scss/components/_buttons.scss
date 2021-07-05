@@ -1,0 +1,32 @@
+.yt {
+  &__wrapper {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    background: rgba(255, 238, 216, 0.36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 47px);
+    cursor: pointer;
+  }
+  &__circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: $orange;
+    @include dfcenter;
+  }
+  &__arrow {
+    width: 39px;
+    height: 39px;
+    background: url("../../images/features/yt__arrow.png") no-repeat 74% center;
+  }
+}
+input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}

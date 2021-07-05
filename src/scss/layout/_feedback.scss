@@ -1,0 +1,48 @@
+.feedback {
+  padding-bottom: 102px;
+  &__heading {
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &__body {
+    margin-top: 58px;
+    max-width: calc(100% - 160px);
+    margin: 58px auto 0 auto;
+  }
+  .list-feedback {
+    @include dfsb;
+    column-gap: 40px;
+    position: relative;
+    &__item {
+      max-width: 432px;
+      border-radius: 8px;
+      padding: 15px 25px 28px 19px;
+      margin-bottom: 16px;
+      background-color: $blue--background;
+      -webkit-box-shadow: 17px 16px 0px 0px rgba(139, 153, 202, 1);
+      -moz-box-shadow: 17px 16px 0px 0px rgba(139, 153, 202, 1);
+      box-shadow: 17px 16px 0px 0px rgba(139, 153, 202, 1);
+    }
+    &__top {
+      display: flex;
+      align-items: center;
+    }
+    &__name {
+      margin-left: 15px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: $black;
+    }
+    &__content {
+      margin-top: 16px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

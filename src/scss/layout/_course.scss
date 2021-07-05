@@ -1,0 +1,88 @@
+.course {
+  background-color: $blue--70;
+  padding: 35px 0;
+  min-height: 770px;
+  &__heading {
+    text-align: center;
+  }
+  &__title {
+    color: $white;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &__body {
+    margin-top: 43px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 19px;
+  }
+  &__item {
+    background-color: $blue--70;
+    height: 279px;
+    text-align: center;
+    box-shadow: $course--boxshadow;
+  }
+  &__item:hover &__wrap {
+    height: 100%;
+  }
+  &__item:hover &__link {
+    display: flex;
+  }
+  &__wrap {
+    height: 264px;
+    background-color: $white;
+    padding: 34px 15px 14px 18px;
+    @include dfcsb;
+    border-radius: 4px;
+    transition: height 0.4s;
+  }
+  &__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    color: $blue--10;
+    height: 51px;
+    @include dfcenter;
+  }
+  &__text {
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray--00;
+  }
+  &__image {
+    margin: 0 auto;
+  }
+  &__watch {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    color: $turquoise--20;
+  }
+  &__arrow {
+    margin-left: 9px;
+    padding-top: 4px;
+  }
+  &__link {
+    @include dfcenter;
+    display: none;
+  }
+  &__all {
+    @include dfcenter;
+    margin-top: 34px;
+  }
+  &__alltext {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $white;
+  }
+  &__allimage {
+    margin-top: 6px;
+    margin-left: 13px;
+  }
+}

@@ -1,0 +1,107 @@
+.lesson-stage{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&>*{
+		box-sizing: border-box;
+	}
+	&__row{
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;
+		@media screen and (max-width: 767px){
+			flex-wrap:wrap;
+		}
+	}
+
+	&__time{
+		display: flex;
+		align-items: center;
+		order: 1;
+		span{
+			display: inline-block;
+			&:first-child{
+				font-size: 16px;
+				font-weight: 700;
+				margin-right: 5px;
+				@media screen and (max-width: 767px){
+					display: none;
+				}
+			}
+			&:last-child{
+				color: $greenText;
+				font-weight: 700;
+				@media screen and (max-width: 767px){
+					font-size: 16px;
+					color: #333333;
+				}
+			}
+		}
+	
+	}
+
+	&__answers{
+		order:2;
+		@media screen and (max-width: 767px){
+			order: 3;
+			width: 100%;
+			margin-top: 6px;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		li{
+			width: 77px;
+			height: 6px;
+			border-radius: 10px;
+			border: 1px solid #EFEFEF;
+			background-color: #EFEFEF;
+			& + li{
+				margin-left: 6px;
+			}
+			&.lesson-stage__answers-right{
+				background-color: $greenText;
+				border-color: $greenText;
+			}
+			&.lesson-stage__answers-wrong{
+				background-color: $orange;
+				border-color: $orange;
+			}
+			&.lesson-stage__answers-active{
+				background-color: #fff;
+				border-color: $greenText;
+			}
+		}
+	}
+	&__score{
+		display: flex;
+		align-items: center;
+		order:3;
+		
+		span:first-child{
+			display: inline-block;
+			font-weight: 700;
+			font-size: 16px;
+			margin-right: 5px;
+		}
+		span:last-child{
+			display: inline-block;
+			color: $greenText;
+			font-weight: 700;
+		}
+		@media screen and (max-width: 767px){
+			order: 2;
+			span:first-child{
+				color:#8B99CA;
+				font-weight: 400;
+				font-size: 12px;
+			}
+			span:last-child{
+				font-size: 14px;
+			}
+		}
+	}
+}

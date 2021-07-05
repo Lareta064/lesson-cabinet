@@ -1,0 +1,34 @@
+.online {
+    padding-bottom: 34px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    padding-top: 39px;
+    margin-left: 50px;
+    .online {
+      &__list {
+        margin-top: 46px;
+      }
+      &__item + .online__item {
+        margin-top: 35px;
+      }
+    }
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $blue--00;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__text {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin absolute {
+  position: absolute;
+  display: block;
+  content: "";
+}
+@mixin dfsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin dfcsb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@mixin dfcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin dfcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

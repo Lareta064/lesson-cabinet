@@ -1,0 +1,24 @@
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  column-gap: 40px;
+}
+.slick-arrow {
+  @include absolute;
+  width: 55px;
+  height: 54px;
+  padding: 0;
+  z-index: 10;
+  outline: none;
+  border: none;
+}
+.list-feedback__prev {
+  background: url("../../images/feedback/prev.png");
+  left: -58px;
+}
+.list-feedback__next {
+  right: -69px;
+  background: url("../../images/feedback/next.png");
+}

@@ -1,0 +1,110 @@
+.process {
+  background-color: $blue--background;
+  padding: 38px 80px;
+  .tabs-process {
+    &__wrapper {
+      max-width: 975px;
+      margin: 0 auto;
+    }
+    &__list {
+      @include dfsb;
+      position: relative;
+      z-index: 1;
+    }
+    &__dottedwrapper {
+      height: 2px;
+      margin-left: 35px;
+      position: relative;
+      top: -10px;
+      margin-right: 70px;
+    }
+    &__dashed {
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%238B99CAFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+      position: absolute;
+      height: 2px;
+      width: 100%;
+    }
+    &__item {
+      cursor: pointer;
+    }
+    &__item.active {
+      .tabs-process__text {
+        color: $blue--00;
+      }
+      .tabs-process__circle {
+        background-color: $blue--00;
+      }
+    }
+    &__circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      @include dfcenter;
+      margin: 16px auto 0 auto;
+      background-color: $blue--70;
+    }
+    &__point {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 24px;
+      color: $blue--70;
+    }
+    &__content {
+      display: none;
+      margin-top: 44px;
+      justify-content: space-between;
+    }
+    &__content.active {
+      display: flex;
+    }
+    .left-tabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 445px;
+      width: 100%;
+      &__title {
+        color: $blue--00;
+      }
+      &__about {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $gray--00;
+        max-width: 398px;
+      }
+      &__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        color: $blue--00;
+      }
+      &__list {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(123px, 205px));
+        justify-content: space-between;
+        row-gap: 29px;
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        line-height: 20px;
+      }
+      &__text {
+        margin-left: 18.5px;
+      }
+    }
+    .right-tabs {
+      &__image {
+        width: 100%;
+        min-width: 400px;
+      }
+    }
+  }
+}

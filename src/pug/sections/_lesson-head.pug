@@ -1,0 +1,24 @@
+mixin lesson-menu(items)
+	ul
+		each item in items
+			if item.addClass
+				li(class=""+ item.addClass)
+					a(href="#!") #{item.title}
+			else
+				li
+					a(href="#!") #{item.title}
+			
+
+
+.lesson-head
+	.lesson-head__content
+		.lesson-head__top.m-auto
+			button.lesson-head__icon-back
+				img(src="./images/lesson/icons/arrow-left.png", width="25" alt="alt")
+			.lesson-head__text
+				p Он есть? (Он является?)
+	//====== МЕНЮ ======
+	.container-750
+		.lesson-head__menu
+			+lesson-menu([{title: 'Видео'}, {title: 'Аудирование'},{title: 'Словарь'},{title: 'Перевод', addClass:'lesson-head__menu-active'},{title: 'Диктант', addClass:'lesson-head__menu-disable'}])
+	//====== //МЕНЮ ======

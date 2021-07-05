@@ -1,0 +1,128 @@
+/*========LESSON HEADER=========*/
+.m-auto{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-750{
+	max-width: 780px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.lesson-head> *{
+	box-sizing: border-box;
+}
+.lesson-head{
+	border-bottom: 1px solid #B9D2FF;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	@media screen and (max-width: 767px){
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	& > .container-750{
+		@media screen and (max-width: 767px){
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	&__top{
+		display: flex;
+		align-items: center;
+		margin-bottom: 13px;
+		max-width:780px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		@media screen and (max-width: 767px){
+			display: none;
+		}
+	}
+	&__icon-back{
+		margin-right: 13px;
+		background-color: transparent;
+		padding: 0;
+		border: 0;
+		cursor:pointer;
+		&:hover{
+			opacity: .5;
+		}
+	}
+	
+	&__menu{
+		overflow-x: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		  }
+
+		ul{
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			white-space: nowrap;
+			padding-right: 20px;
+			li{
+				position: relative;
+				padding-left: 20px;
+				&:before{
+					content:'';
+					position: absolute;
+					left: 0;
+					top: 56%;
+					transform: translateY(-50%);
+					width: 13px;
+					height: 10px;
+					background-image: url('../images/lesson/icons/check.png');
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: auto;
+					@media screen and (max-width: 767px){
+						width: 11px;
+						height: 9px;
+					}
+				}
+			
+				a{
+				color: $menuItem;
+				padding-top: 2px;
+				padding-bottom: 2px;
+
+					@media screen and (max-width: 767px){
+						font-size: 13px;
+						line-height: 15px;
+					}
+				}
+				&.lesson-head__menu-active a{
+					color: $menuItemActive;
+					font-weight: 700;
+					@media screen and (max-width: 767px){
+						font-weight: 500;
+					}
+				}
+				&.lesson-head__menu-disable a{
+					color: $menuItemDisable;
+				}
+				&.lesson-head__menu-active:before,
+				&.lesson-head__menu-disable:before{
+					display: none;
+				}
+				@media screen and (max-width: 767px){
+					& + li{
+						margin-left: 26px;
+					}
+					&:first-child{margin-left: 15px;}
+					&:last-child{padding-right: 15px;}
+				}
+
+			}
+		}
+	}
+}
+
+/*========//LESSON HEADER=========*/

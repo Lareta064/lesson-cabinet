@@ -1,0 +1,29 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/settings';
+
+@import 'components/buttons';
+@import 'components/menu';
+@import 'components/popup';
+@import 'components/slick';
+
+
+@import 'layout/header';
+@import 'layout/features';
+@import 'layout/what';
+@import 'layout/process';
+@import 'layout/result';
+@import 'layout/online';
+@import 'layout/course';
+@import 'layout/questions';
+@import 'layout/feedback';
+@import 'layout/footer';
+
+@import 'base/media';
+
+/*=========LESSON========*/
+@import 'lesson/lesson-head';
+@import 'lesson/lesson-stage';
