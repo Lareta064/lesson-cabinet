@@ -1,0 +1,35 @@
+.task-table{
+	p>span{
+			color: $greenText;
+			font-weight: 700;
+		}
+	&__header{
+		margin-bottom: 37px;
+		font-weight: 700;
+		text-align: center;
+	}
+	table{
+		border-collapse:collapse;
+		width: 100%;
+		& + table{
+			margin-top: 10px;
+		}
+		
+	}
+	td{
+		border: 1px solid #99A5B1;
+		padding: 10px 12px;
+		text-align: center;
+		width: 50%;
+		font-size: 18px;
+		
+	}
+	@media screen and (max-width: 767px) {
+		td{
+			font-size: 12px;
+		}
+		&__header{
+			font-size: 14px;
+		}
+	}
+}
