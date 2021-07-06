@@ -15,12 +15,13 @@
 .lesson-wrapper {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	min-height: 100vh;
-	.lesson-footer-wrapper{
-		margin-top: auto;
+	.lesson-body{
+		flex-grow:5;
 	}
 	.lesson-footer {
-		margin-top: 40px;
+		// margin-top: 40px;
 	}
 }
 video{
