@@ -9,6 +9,23 @@
 		display: flex;
 		justify-content: space-between;
 		align-items:center;
+		&-row{
+		display: flex;
+		align-items: center;
+			.exercise-menu__hint-btn{
+				margin-left: 38px;
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1120px) {
+		&__content{
+			
+			&-row{
+				.exercise-menu__hint-btn{display: block;}
+			}
+		}
 	}
 	@media screen and (max-width: 767px){
 		padding-top: 9px;
@@ -16,7 +33,11 @@
 		&__content{
 			flex-direction: column-reverse;
 			.button{margin-bottom: 11px;}
+			&-row{
+				margin-top: 5px;
+			}
 		}
+		
 
 	}
 }

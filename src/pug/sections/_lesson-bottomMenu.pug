@@ -4,9 +4,9 @@ mixin btnItem(ic, text)
 		span #{text}
 .exercise-menu
 	.exercise-menu__hint-btn
-		+btnItem('bell', 'Подсказка')(data-target="hint")
+		+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")
 	.exercise-menu__nav
-		+btnItem('info', 'Задание')(data-target="info")
+		+btnItem('info', 'Задание')(data-target="info" )
 		+btnItem('dict', 'Словарь')
 		+btnItem('board', 'Грамматика')
 	.exercise-menu__toggle

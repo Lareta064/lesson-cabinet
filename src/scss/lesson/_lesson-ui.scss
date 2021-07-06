@@ -1,3 +1,17 @@
+#overlay{
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0, .5);
+	display: none;
+	&.show{
+		display: block;
+	}
+	
+}
 .lesson-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -39,13 +53,22 @@ video{
 	border-radius: 5px;
 	border: none;
 	color: #fff;
+	cursor:pointer;
+	&:hover{
+		background-color: #FFAB2D;
+	}
+	&:active{
+		background-color: #FF8B07;
+	}
 
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		max-width: 290px;
 	}
 }
-
+.lesson-body{
+	position: relative;
+}
 .lesson-body button {
 	border: 0;
 	background-color: transparent;
@@ -93,6 +116,7 @@ video{
 	background-color: #E5EBFF;
 	position: relative;
 	border-radius: 30px;
+	cursor:pointer;
 	input{width: 100%;}
 	p {
 		position: absolute;
@@ -104,6 +128,7 @@ video{
 		font-size: 13px;
 		line-height: 29px;
 		display: flex;
+		cursor:pointer;
 		justify-content: space-between;
 		&:after {
 			content: '';

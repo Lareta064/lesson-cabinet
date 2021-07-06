@@ -1,7 +1,12 @@
+
 .modal-information{
 	width: 100%;
 	max-width: 750px;
 	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
 	&.show{
 		display: block;
 	}
@@ -43,5 +48,13 @@
 		padding-right: 12px;
 		font-size: 16px;
 		color: #ffffff;
+	}
+
+	/*Позиционирование*/
+	&.modal-information--hint{
+		bottom: 0;
+	}
+	&.modal-information--info{
+		top: 0;
 	}
 }
