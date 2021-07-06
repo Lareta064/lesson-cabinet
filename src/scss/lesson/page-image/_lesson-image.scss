@@ -1,5 +1,10 @@
 .lesson-body--img .lesson-body__content {
 	padding-top: 60px;
+	@media screen and (max-width:1023px){
+		max-width:520px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	@media screen and (max-width:767px){
 		padding-top: 0;
 	}
@@ -106,5 +111,15 @@ p.textarea {
 	&:empty::before {
 		content: "Напечатайте здесь";
 		color: #99A5B1;
+	}
+}
+.lesson-image__hide-btn{
+	display: flex;
+	align-items:  center;
+	justify-content: space-between;
+	margin-top: 8px;
+	display: none;
+	@media screen and (max-width: 767px) {
+		display: flex;
 	}
 }
