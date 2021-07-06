@@ -185,5 +185,29 @@ video{
 			line-height: 20px;
 		}
 	}
+}
+/*кастомный чекбокс*/
+.custom-checkbox__input {
+	width: 0.01px;
+}
+
+.custom-checkbox__span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+	background-image: url(../images/lesson/icons/checkbox.png);
+	background-repeat: no-repeat;
+	background-position: center -15px;
+	transition: 0.25s ease-out;
+
+}
+
+.custom-checkbox__input:checked+.custom-checkbox__span {
+	background-position: center;
+	background-color:$greenText;
+	border: 1px solid $greenText;
 
 }

@@ -1,0 +1,36 @@
+mixin taskCheckbox(text1, text2, ic)
+	.check-row
+		.check-row__input
+			.custom-checkbox
+				label
+					input.custom-checkbox__input(type="checkbox", name="form-checkbox")
+					span.custom-checkbox__span
+		
+		.check-row__text
+			.text-bold
+				p #{text1}
+			if text2
+				.text-simple
+					p #{text2}
+		if ic
+			.check-row__button
+				img(src="./images/lesson/icons/speaker.png", alt="alt")
+
+.madal-block
+	.modal-white.m-auto.modal-wrap(data-role="info")
+		.modal-white__header
+			.modal-white__header-title
+				p Добавьте незнакомые слова в свой персональный словарь для дополнительного изучения.
+			
+		.modal-white__body
+			.dictionary-block
+				.dictionary-block__header
+					+taskCheckbox("Выбрать все")
+				.dictionary-block__body
+					+taskCheckbox("floor","пол, этаж", 'icon')
+					+taskCheckbox("desk"," письменный стол", 'icon')
+					+taskCheckbox("wardrobe","гардероб, шкаф для одежды", 'icon')
+					
+				
+				.dictionary-block__button
+					button.button Продолжить

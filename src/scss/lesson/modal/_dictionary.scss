@@ -1,0 +1,50 @@
+.check-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&+ .check-row{margin-top: 23px;}
+
+	&__text{
+		display: flex;
+		align-items: center;
+		flex-grow: 2;
+		margin-left: 37px;
+		margin-right: 20px;
+		font-size: 16px;
+		line-height: 1.2;
+		color:#5c5c5c ;
+		.text-bold{
+			width: 42%;
+			color: #333333;
+		}
+	}
+	&__button{
+		cursor: pointer;
+	}
+	@media screen and (max-width: 767px) {
+		&+ .check-row{margin-top: 19px;}
+		&__text{
+			font-size: 12px;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-left: 13px;
+			.text-bold{
+				width: 100%;
+				color: #333333;
+			}
+		}
+	}
+}
+.dictionary-block{
+	&__header{
+		padding-bottom: 17px;
+		border-bottom: 1px solid #B9D2FF;
+	}
+	&__body{
+		padding-top: 17px;
+		margin-bottom: 37px;
+	}
+	&__button{
+		text-align: center;
+	}
+}
