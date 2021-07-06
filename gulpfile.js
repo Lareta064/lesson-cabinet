@@ -93,8 +93,8 @@ gulp.task("copy:libs", function(callback) {
     callback();
 });
 // Копирование Скриптов
-gulp.task("copy:js", function(callback) {
-    return gulp.src("./src/js/**/*.*").pipe(gulp.dest("./build/js/"));
+gulp.task("copy:script", function(callback) {
+    return gulp.src("./src/script/**/*.*").pipe(gulp.dest("./build/script/"));
     callback();
 });
 gulp.task("copy:video", function(callback) {
@@ -114,7 +114,7 @@ gulp.task('groupmedia', function (callback) {
 gulp.task("watch", function() {
     // Следим за картинками и скриптами и обновляем браузер
     watch(
-        ["./build/js/**/*.*", "./build/img/**/*.*" , "./build/fonts/**/*.*" , "./build/libs/**/*.*"],
+        ["./build/script/**/*.*", "./build/img/**/*.*" , "./build/fonts/**/*.*" , "./build/libs/**/*.*"],
         gulp.parallel(browserSync.reload)
     );
 
@@ -128,7 +128,7 @@ gulp.task("watch", function() {
 
     // Следим за картинками и скриптами, и копируем их в build
     watch("./src/images/**/*.*", gulp.parallel("copy:images"));
-    watch("./src/js/**/*.*", gulp.parallel("copy:js"));
+    watch("./src/script/**/*.*", gulp.parallel("copy:script"));
     watch("./src/video/**/*.*", gulp.parallel("copy:video"));
     watch("./src/fonts/**/*.*", gulp.parallel("copy:fonts"));
     watch("./src/libs/**/*.*", gulp.parallel("copy:libs"));
@@ -153,7 +153,7 @@ gulp.task(
     "default",
     gulp.series(
         gulp.parallel("clean:build"),
-        gulp.parallel("scss", "pug", "copy:images", "copy:js", "copy:video", "copy:fonts", "copy:libs"),
+        gulp.parallel("scss", "pug", "copy:images", "copy:script", "copy:video", "copy:fonts", "copy:libs"),
         // gulp.parallel("groupmedia"),
         gulp.parallel("server", "watch", "pages")
     )
