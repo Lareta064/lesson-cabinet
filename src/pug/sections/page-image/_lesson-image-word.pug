@@ -1,0 +1,34 @@
+.lesson-body.lesson-body--img
+	.container-750
+		include ../_lesson-stage.pug
+		.lesson-body__content
+			.lesson-image__row
+				.lesson-image__row-pic
+					img(src="./images/lesson/lesson-image/word-img.jpg", width="200" alt="alt")
+					.lesson-image__name--mobile
+						p [hæm] ветчина
+				.lesson-image__row-text
+					.lesson-image__name
+						p [hæm] ветчина
+					.lesson-image__row-textarea
+						p.textarea(role="textbox" contenteditable="true")
+			.lesson-image__hide-btn
+				button.hide-btn__help
+					img(src="./images/lesson/icons/help.png", alt="alt")
+				//===== toggle btn ======
+				.switch-button
+					label
+						input(type="checkbox")
+						p
+							span Сложно
+							span Просто
+			//======= КНОПКИ  УПРАВЛЕНИЯ АУДИО
+			.lesson-body__controller
+				button.button-prev
+					img(src="./images/lesson/icons/arrow-left.png", width="25" alt="alt")
+				button.button-play
+					img(src="./images/lesson/icons/play.png", width="49" alt="alt")
+					img(src="./images/lesson/icons/pause.png", width="49" alt="alt")
+				button.button-next
+					img(src="./images/lesson/icons/arrow-right.png", width="25" alt="alt")
+		include ../_lesson-bottomMenu.pug

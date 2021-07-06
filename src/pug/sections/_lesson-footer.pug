@@ -2,18 +2,20 @@ mixin btnItem(ic, text)
 	button.button-item
 		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
 		span #{text}
-.lesson-footer
-	.container-750
-		.lesson-footer__content
-			+btnItem('comments', 'Комментарии (60)')
-			button.button Продолжить
+.lesson-footer-wrapper
+	.lesson-footer
+		.container-750
+			.lesson-footer__content
+				+btnItem('comments', 'Комментарии (60)')
+				button.button Продолжить
 
 //=======Полный футер с кнопкой Подсказка на мобилках и таблетках ==========
-//- .lesson-footer.lesson-footer--full
-//- 	.container-750
-//- 		.lesson-footer__content
-//- 			.lesson-footer__content-row
-//- 				+btnItem('comments', 'Комментарии (60)')
-//- 				.exercise-menu__hint-btn
-//- 					+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")
-//- 			button.button Продолжить
+//- .lesson-footer-wrapper
+//- 	.lesson-footer.lesson-footer--full
+//- 		.container-750
+//- 			.lesson-footer__content
+//- 				.lesson-footer__content-row
+//- 					+btnItem('comments', 'Комментарии (60)')
+//- 					.exercise-menu__hint-btn
+//- 						+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")
+//- 				button.button Продолжить

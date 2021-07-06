@@ -1,0 +1,61 @@
+.container-750(style="padding-top:50px")
+	.switch-button.switch-button--icon
+		label
+			input(type="checkbox")
+			p
+				span
+					img(src="./images/lesson/icons/mic1.png", width="19" alt="alt")
+					img(src="./images/lesson/icons/mic2.png", width="19" alt="alt")
+				span
+					img(src="./images/lesson/icons/mic3.png", width="19" alt="alt")
+					img(src="./images/lesson/icons/mic4.png", width="19" alt="alt")
+	br
+	.icon-text
+		.icon-text__img
+			img(src="./images/lesson/icons/check.png", alt="alt")
+			img(src="./images/lesson/icons/error.png",  alt="alt")
+		
+		p I am a boy - 75%
+	
+	.icon-text.icon-text--error
+		.icon-text__img
+			img(src="./images/lesson/icons/check.png", alt="alt")
+			img(src="./images/lesson/icons/error.png",  alt="alt")
+		p I am a son - 25%
+	br
+	.audio-recording
+		.audio-recording__img
+			img(src="images/lesson/icons/mic2.png", alt="alt")
+		.audio-recording__state
+			span
+			span
+			span
+	br
+	.dictation.text-center
+		.dictation-title.text-grey
+			p Произнесите вслух на 
+		.dictation-text 
+			p Я (есть) (просто) мальчик
+		.dictation-mic
+			.audio-recording
+				.audio-recording__img
+					img(src="images/lesson/icons/mic2.png", alt="alt")
+					.audio-recording__state
+						span
+						span
+						span
+
+	br
+	.dictation.text-center
+		.dictation-title.text-grey
+			p Неправильно, попробуйте еще раз
+		.dictation-text 
+			p Я (есть) (просто) мальчик
+		.dictation-text-icon
+			.icon-text.icon-text--error
+				.icon-text__img
+					img(src="./images/lesson/icons/check.png", alt="alt")
+					img(src="./images/lesson/icons/error.png",  alt="alt")
+				p I am a son - 25%
+		.dictation-textarea
+			p.textarea(role="textbox" contenteditable="true")

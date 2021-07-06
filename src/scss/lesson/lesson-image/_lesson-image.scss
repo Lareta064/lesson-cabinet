@@ -82,6 +82,7 @@
 		p.textarea {
 			font-size: 14px;
 			padding-top: 12px;
+			height: 49px;
 		}
 
 	}
@@ -122,4 +123,7 @@ p.textarea {
 	@media screen and (max-width: 767px) {
 		display: flex;
 	}
+}
+.lesson-image__badges{
+	padding-top: 26px;
 }

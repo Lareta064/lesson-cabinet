@@ -11,9 +11,13 @@ mixin btnItem(ic, text)
 		+btnItem('board', 'Грамматика')
 	//====== кнопка переключатель #1 ======
 	.exercise-menu__toggle
-		.switch-button
+		.switch-button.switch-button--icon
 			label
 				input(type="checkbox")
 				p
-					span сложно
-					span просто
+					span
+						img(src="./images/lesson/icons/mic1.png", width="19" alt="alt")
+						img(src="./images/lesson/icons/mic2.png", width="19" alt="alt")
+					span
+						img(src="./images/lesson/icons/mic3.png", width="19" alt="alt")
+						img(src="./images/lesson/icons/mic4.png", width="19" alt="alt")
