@@ -1,0 +1,110 @@
+.lesson-body--img .lesson-body__content {
+	padding-top: 60px;
+	@media screen and (max-width:767px){
+		padding-top: 0;
+	}
+}
+
+.lesson-image__row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	&-pic {
+		margin-right: 25px;
+	}
+
+	&-text {
+		flex-grow: 2;
+		color: #5C5C5C;
+	}
+
+	&-textarea {
+		margin-top: 20px;
+
+	}
+
+	.lesson-image__name--mobile {
+		display: none;
+	}
+
+	@media screen and (max-width: 1023px) {
+		flex-wrap: wrap;
+
+		&-pic {
+			margin-right: 0;
+			margin-bottom: 30px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+
+	}
+
+	@media screen and (max-width: 440px) {
+
+		&-pic {
+			display: flex;
+			margin-bottom: 0;
+			align-items: center;
+			justify-content: flex-start;
+
+			img {
+				width: 120px;
+			}
+		}
+
+		&-text {
+			width: 100%;
+
+			.lesson-image__name {
+				display: none;
+			}
+
+		}
+
+		&-textarea {
+			margin-top: 15px;
+
+		}
+
+		.lesson-image__name--mobile {
+			display: block;
+			margin-left: 15px;
+			font-size: 14px;
+		}
+
+		p.textarea {
+			font-size: 14px;
+			padding-top: 12px;
+		}
+
+	}
+}
+
+p.textarea {
+	overflow: hidden;
+	resize: none;
+	min-height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	border-radius: 3px;
+	background-color: #EEF7FF;
+	padding-bottom: 15px;
+	width: 100%;
+	position: relative;
+	color: #333333;
+	outline: none;
+
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+
+	&:empty::before {
+		content: "Напечатайте здесь";
+		color: #99A5B1;
+	}
+}

@@ -1,12 +1,17 @@
-.lesson-body.lesson-body--audio
+.lesson-body.lesson-body--img
 	.container-750
 		include ../_lesson-stage.pug
 		.lesson-body__content
-			.lesson-body__text
-				.text-block
-					p Мужчина переходил дорогу однажды, когда лягушка позвала его и сказала: «Если ты меня поцелуешь, я превращусь в прекрасную принцессу».
-				.text-block.text-bold
-					p A man was crossing a road one day when a frog called out to him and said, "If you kiss me, I'll turn into a beautiful princess".
+			.lesson-image__row
+				.lesson-image__row-pic
+					img(src="./images/lesson/lesson-image/word-img.jpg", width="200" alt="alt")
+					.lesson-image__name--mobile
+						p [hæm] ветчина
+				.lesson-image__row-text
+					.lesson-image__name
+						p [hæm] ветчина
+					.lesson-image__row-textarea
+						p.textarea(role="textbox" contenteditable="true")
 			
 			//======= КНОПКИ  УПРАВЛЕНИЯ АУДИО
 			.lesson-body__controller

@@ -3,14 +3,14 @@
 	padding-bottom: 20px;
 }
 .lesson-body--audio .lesson-body__text{
-	margin-bottom: 25px;
+	;
 	min-height: 200px;
 }
 .lesson-body__controller{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	margin-top: 60px;
 	button +button{
 		margin-left: 43px;
 	}
@@ -37,7 +37,12 @@
 			}
 		}
 	}
+	@media screen and (max-width: 1199px){
+		margin-top: 35px;
+		
+	}
 	@media screen and (max-width: 767px){
+		margin-top: 30px;
 		button +button{
 			margin-left: 21px;
 		}

@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+
+block content
+	#overlay
+	.lesson-wrapper
+		include ../sections/_lesson-head.pug
+		include ../sections/page-image/_lesson-image.pug
+		include ../sections/_lesson-footer.pug
+	
+	
+block variables
+	-var title = "Урок с картинкой";
