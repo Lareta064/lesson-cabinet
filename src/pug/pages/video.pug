@@ -1,0 +1,11 @@
+extends ../layouts/layout.pug
+
+block content
+	.lesson-wrapper
+		include ../sections/_lesson-head.pug
+		include ../sections/page-video/_lesson-video.pug
+		include ../sections/_lesson-footer.pug
+	
+	
+block variables
+	-var title = "Видеоурок";

@@ -1,0 +1,11 @@
+.lesson-body.lesson-body--video
+	.container-750
+		include ../_lesson-stage.pug
+		.lesson-body__content
+			.lesson-body__video.m-auto
+				video.video(poster="images/lesson/lesson-video/poster.jpg" controls alt='video')
+					source(src="video/video.mp4" type="video/mp4")
+					//- source(src="video/video.webm" type="video/webm")
+					//- source(src="video.ogv" type="video/ogg")
+
+		include ../_lesson-bottomMenu.pug

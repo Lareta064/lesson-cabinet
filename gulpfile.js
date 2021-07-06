@@ -97,6 +97,10 @@ gulp.task("copy:js", function(callback) {
     return gulp.src("./src/js/**/*.*").pipe(gulp.dest("./build/js/"));
     callback();
 });
+gulp.task("copy:video", function(callback) {
+    return gulp.src("./src/video/**/*.*").pipe(gulp.dest("./build/video/"));
+    callback();
+});
 // группировка меди запросов
 gulp.task('groupmedia', function (callback) {
 
@@ -125,6 +129,7 @@ gulp.task("watch", function() {
     // Следим за картинками и скриптами, и копируем их в build
     watch("./src/images/**/*.*", gulp.parallel("copy:images"));
     watch("./src/js/**/*.*", gulp.parallel("copy:js"));
+    watch("./src/video/**/*.*", gulp.parallel("copy:video"));
     watch("./src/fonts/**/*.*", gulp.parallel("copy:fonts"));
     watch("./src/libs/**/*.*", gulp.parallel("copy:libs"));
 });
@@ -148,7 +153,7 @@ gulp.task(
     "default",
     gulp.series(
         gulp.parallel("clean:build"),
-        gulp.parallel("scss", "pug", "copy:images", "copy:js", "copy:fonts", "copy:libs"),
+        gulp.parallel("scss", "pug", "copy:images", "copy:js", "copy:video", "copy:fonts", "copy:libs"),
         // gulp.parallel("groupmedia"),
         gulp.parallel("server", "watch", "pages")
     )
