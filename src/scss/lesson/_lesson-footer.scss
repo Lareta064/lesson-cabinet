@@ -1,24 +1,4 @@
-.button{
-	box-sizing: border-box;
-	text-align: center;
-	text-decoration: none;
-	padding: 0;
-	height: 45px;
-	line-height: 45px;
-	padding-left: 52px;
-	padding-right: 52px;
-	font-size: 14px;
-	font-weight: 700;
-	font-family: "Lato", sans-serif;
-	background-color: #FF940D;
-	border-radius:5px;
-	border: none;
-	color: #fff;
-	@media screen and (max-width: 767px){
-		width: 100%;
-		max-width:290px;
-	}
-}
+
 .lesson-footer{
 	box-shadow: 0px -3px 8px rgba(69, 64, 92, 0.1);
 	background-color: #fff;

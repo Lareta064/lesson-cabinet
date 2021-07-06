@@ -1,24 +1,5 @@
 /*========LESSON HEADER=========*/
-.lesson-wrapper{
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	.lesson-footer{
-		margin-top: auto;
-	}
-}
-.m-auto{
-	margin-right: auto;
-	margin-left: auto;
-}
 
-.container-750{
-	max-width: 780px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
 .lesson-header> *{
 	box-sizing: border-box;
 }
