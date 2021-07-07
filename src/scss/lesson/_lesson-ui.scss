@@ -117,6 +117,9 @@ video{
 .text-grey{
 	color:#99A5B1 ;
 }
+.text-red, .text-red a, .text-red p{
+	color: #EB5757;
+}
 .button-item {
 	background-color: transparent;
 	border: 0;
@@ -185,6 +188,7 @@ video{
 	& + p:after{
 		left: auto;
 		right: 0;
+		background-color: #99A5B1;
 	}
 	&+p{
 		span:last-child {

@@ -68,3 +68,63 @@
 		}
 	}
 }
+.dictation-result{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.result-item{
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: 35px;
+		transition: background-color .3s;
+		padding-left: 15px;
+		padding-right: 20px;
+		border-radius: 3px;
+		cursor:pointer;
+		& +.result-item{margin-left: 35px;}
+		span{
+			margin-right: 10px;
+			display: block;
+			width: 14px;
+			height: 14px;
+			position: relative;
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+			}
+			img:last-child{
+				z-index: -1;
+			}
+		}
+	}
+	.result-item{
+		&--right p{color: $greenText;}
+		&--wrong p{color: #EB5757;}
+		&:hover, &.active{
+			p{color: #ffffff; }
+		}
+		&--right:hover, &--right.active,&--wrong:hover, &--wrong.active{
+			span{
+				img{
+					z-index: -1;
+					&:last-child{z-index: 2;}
+				}
+			}
+		}
+
+		&--right:hover, &--right.active{
+			background-color: $greenText;
+			
+			
+		}
+		&--wrong:hover, &--wrong.active{
+			background-color: #EB5757;
+		}
+	}
+	
+}
