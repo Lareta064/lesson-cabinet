@@ -1,0 +1,38 @@
+mixin btnItem(ic, text)
+	button.button-item&attributes(attributes)
+		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
+		span #{text}
+
+//=====низ для страницы диктант =========
+.lesson-bottom
+	.lesson-bottom__menu
+		.container-750
+			.exercise-menu.exercise-menu--full
+				.exercise-menu__hint-btn
+					+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")
+				
+				//============= иконка-подсказка на мобилках ===========
+				button.hide-btn__help
+					img(src="./images/lesson/icons/help.png", alt="alt")
+				//============= средняя часть меню ===========
+				.exercise-menu__nav
+					+btnItem('info', 'Задание')(data-target="info" )
+					+btnItem('dict', 'Словарь')
+					+btnItem('board', 'Грамматика')
+				//====== кнопка переключатель #1 ======
+				.exercise-menu__toggle
+					.switch-button.switch-button--icon
+						label
+							input(type="checkbox")
+							p
+								span
+									img(src="./images/lesson/icons/mic1.png", width="19" alt="alt")
+									img(src="./images/lesson/icons/mic2.png", width="19" alt="alt")
+								span
+									img(src="./images/lesson/icons/mic3.png", width="19" alt="alt")
+									img(src="./images/lesson/icons/mic4.png", width="19" alt="alt")
+	.lesson-footer
+		.container-750
+			.lesson-footer__content
+				+btnItem('comments', 'Комментарии (60)')
+				button.button Продолжить

@@ -2,6 +2,7 @@ mixin btnItem(ic, text)
 	button.button-item&attributes(attributes)
 		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
 		span #{text}
+
 .exercise-menu
 	.exercise-menu__hint-btn
 		+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")

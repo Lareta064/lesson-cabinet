@@ -1,3 +1,9 @@
+mixin btnItem(ic, text)
+	button.button-item&attributes(attributes)
+		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
+		span #{text}
+
+
 .lesson-body
 	.container-750
 		include ../_lesson-stage.pug

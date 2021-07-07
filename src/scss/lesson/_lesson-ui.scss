@@ -17,12 +17,20 @@
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
+	button{
+		
+		border: 0;
+		font-family: 'Lato', sans-serif;
+	}
 	.lesson-body{
 		flex-grow:5;
 	}
 	.lesson-footer {
 		// margin-top: 40px;
 	}
+}
+button{
+	background-color:transparent;
 }
 video{
 	max-width: 100%;
@@ -89,7 +97,7 @@ video{
 		font-weight: 700;
 	}
 }
-
+.text-green, .text-green p,.text-green button{color: $greenText;}
 .text-block {
 	padding-top: 15px;
 	padding-bottom: 15px;

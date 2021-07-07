@@ -1,0 +1,61 @@
+.mic-block {
+	position: relative;
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height:100px;
+
+	.text-green {
+		font-weight: 500;
+		font-weight: bold;
+		margin-top: 16px;
+
+		button {
+			background-color: transparent;
+		}
+
+	}
+
+	&__img {
+		position: absolute;
+		right: -15px;
+		bottom: 0;
+		z-index: 2;
+		transform: translateX(100%);
+		img{
+			max-width:100%;
+		}
+		@media screen and (max-width:767px) {
+			transform: translateX(0);
+			right: 0;
+			bottom: -20px;
+			width: 35px;
+		}
+	}
+}
+.exercise-menu--full .hide-btn__help {display: none;}
+.exercise-menu.exercise-menu--full .exercise-menu__toggle {
+	display: block;
+
+}
+
+@media screen and (max-width:767px) {
+	.exercise-menu.exercise-menu--full {
+		flex-wrap: wrap;
+
+		.hide-btn__help {
+			display: block;
+			order: 1
+		}
+
+		.exercise-menu__toggle {
+			order: 2
+		}
+
+		.exercise-menu__nav {
+			width: 100%;
+			order: 3;
+			margin-top: 24px;
+		}
+	}
+}

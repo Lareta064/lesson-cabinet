@@ -2,6 +2,14 @@ mixin btnItem(ic, text)
 	button.button-item&attributes(attributes)
 		img(src="./images/lesson/icons/"+ic+".png", alt="alt")
 		span #{text}
+
+.mic-block.text-center
+	.mic-block__img
+		img(src="images/lesson/icons/arrow-decore.png", alt="alt")
+	.mic-block-text.text-grey
+		p Разрешите доступ к микрофону #[br] или нажмите “Продолжить”, если не можете сейчас говорить
+	.mic-block-text.text-green
+		button Продолжить
 .exercise-menu
 	.exercise-menu__hint-btn
 		+btnItem('bell', 'Подсказка')(data-target="hint" class="overlay-bg")
