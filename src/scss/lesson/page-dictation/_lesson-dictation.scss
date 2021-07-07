@@ -1,3 +1,12 @@
+.lesson-body--dictation{
+	.lesson-body__content{
+		padding-top: 60px;
+		@media screen and (max-width:767px){
+			padding-top: 0;
+		}	
+	}
+	
+}
 .mic-block {
 	position: relative;
 	max-width: 520px;

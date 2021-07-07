@@ -1,10 +1,17 @@
-.lesson-body
+.lesson-body.lesson-body--dictation
 	.container-750
 		include ../_lesson-stage.pug
 		.lesson-body__content
 			.dictation.text-center
 				.dictation-title.text-grey
-					p Произнесите вслух на 
+					p Неправильно, попробуйте еще раз
 				.dictation-text 
 					p Я (есть) (просто) мальчик
-			.dictation-writing
+				.dictation-text-icon
+					.icon-text.icon-text--error
+						.icon-text__img
+							img(src="./images/lesson/icons/check.png", alt="alt")
+							img(src="./images/lesson/icons/error.png",  alt="alt")
+						p I am a son - 25%
+				.dictation-textarea
+					p.textarea(role="textbox" contenteditable="true")
